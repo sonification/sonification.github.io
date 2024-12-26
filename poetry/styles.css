@@ -1,0 +1,129 @@
+html {
+    overflow-x: initial !important;
+  }
+
+* { 
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Source Code Pro', monospace;
+    list-style-type: none;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    cursor: crosshair;
+  }
+
+body {
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background: black;
+
+
+    display:grid;
+    grid-template-columns:0.5fr 1fr;
+    grid-template-areas:
+    "header header"
+    "image main1 "
+    "image main2 " 
+    "image main3 "
+    "footer footer";
+    gap: 0;
+
+.div-image {
+    grid-area: image;
+
+    /* max-width: 80%; */
+}
+.main-nav-button#1{
+    grid-area: main1;
+}
+.main-nav-button#2{
+    grid-area: main2;
+}
+.main-nav-button#3{
+    grid-area: main3;
+}
+header {
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    min-width: 170px; /* Set minimum width */
+    max-height: 680px; /* Set minimum width */
+}
+.div-image {
+    grid-area: image;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure image doesn't overflow */
+    width: 100%; /* Ensure the container can expand */
+    background-color: rgb(255, 196, 0);
+}
+.div-image img {
+    display:block;
+    object-fit: contain; /* Ensure image resizes from the center */
+    flex-shrink: 0; /* Prevent the image from shrinking below min-width */
+}
+
+h1, footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+/* Mobile layout adjustments */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "image"
+            "main1"
+            "main2"
+            "main3"
+            "footer";
+    }
+}
+/*border/format for each button */
+.main-nav-button{
+    font-size: 31px;
+    font-weight: 400;
+    /*==== maybe to remove ====*/
+    border:2px solid white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the button takes full height of the grid area */
+}
+  }
+.main-nav-button a { /*text color*/
+    color: white;
+    display: inline-block;
+    letter-spacing: 1px; /* Adjusted letter-spacing */
+    text-decoration: none; /* Remove underline from links */
+  }
+.main-nav-button a:hover {
+    /*color: red;*/
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: 1px;
+    color: transparent;
+      -webkit-text-stroke-width: 1.2px;
+      -webkit-text-stroke-color: white;
+  }
+
+
+
