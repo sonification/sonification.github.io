@@ -75,7 +75,11 @@ img {
     object-fit: contain; /* Ensure image resizes from the center */
     flex-shrink: 0; /* Prevent the image from shrinking below min-width */
 }
-
+    font-size: 42px;
+}
+footer{
+    font-size: 21px;
+}
 h1, footer{
     background-color: black;
     color:white;
