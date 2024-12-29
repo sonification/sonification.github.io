@@ -1,123 +1,88 @@
-html {
-    overflow-x: initial !important;
-  }
-* { 
+* {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+.K {
+    margin: 4em;
+}
+body {
+  
     font-family:'Source Code Pro', monospace;
     list-style-type: none;
+    font-size: 80%;
+    background: #000;
+    line-height: 1.2;
 }
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-a {
-    cursor: crosshair;
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    } 
+.div-image  {
+    display: flex;
+    justify-content: center;
+    border: none
+    }
+
+article {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: #000
   }
-
-body {
-    min-height: 100vh;
-    font-size: 1rem;
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
-    background: black;
-
-
-    display:grid;
-    grid-template-columns:0.5fr 1fr;
-    grid-template-areas:
-    "header header"
-    "image main1 "
-    "image main2 " 
-    "image main3 "
-    "footer footer";
-    gap: 0;
-
-.div-image {
-    grid-area: image;
-
-    /* max-width: 80%; */
-}
-.main-nav-button#1{
-    grid-area: main1;
-}
-.main-nav-button#2{
-    grid-area: main2;
-}
-.main-nav-button#3{
-    grid-area: main3;
-}
-header {
-    grid-area: header;
-}
-footer {
-    grid-area: footer;
-}
-
-img {
+  img {
     max-width: 100%;
     height: auto;
-    min-width: 170px; /* Set minimum width */
-    max-height: 680px; /* Set minimum width */
-}
-.div-image {
-    grid-area: image;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Ensure image doesn't overflow */
-    width: 100%; /* Ensure the container can expand */
-/*     background-color: rgb(255, 196, 0); */
-}
-.div-image img {
-    display:block;
-    object-fit: contain; /* Ensure image resizes from the center */
-    flex-shrink: 0; /* Prevent the image from shrinking below min-width */
-}
-h1{
-    font-size: 42px;
-}
-footer{
-    font-size: 21px;
-}
-h1, footer{
-    background-color: black;
-    color:white;
+    
+  }
+
+  header, footer{
+    background: #333;
+    color: #fff;
+    padding: 8px;
     text-align: center;
-}
-/* Mobile layout adjustments */
-@media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "image"
-            "main1"
-            "main2"
-            "main3"
-            "footer";
-    }
-}
-/*border/format for each button */
-.main-nav-button{
+  }
+
+  header{
+    font-size:40px;
+    color: #0000;
+    font-weight: bold;
+    background: url("../images_code/noiseForWebTextCropped.jpg" );
+    -webkit-background-clip: text;
+            background-clip: text;
+    opacity: 1; /*to adjust maybe none*/
+    filter: blur(1px); /*to adjust*/
+  }
+  footer{
+    font-size: 21px;   
+    background: #000; 
+  }
+
+  /*border/format for each button */
+  .main-nav-button{
+    /*color: white;*/
+    text-decoration: none;
     font-size: 31px;
     font-weight: 400;
-    /*==== maybe to remove ====*/
-    border:2px solid white;
     text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    list-style-type: none;
 
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Ensure the button takes full height of the grid area */
-}
+    /*==== maybe to remove ====*/
+    border: 1px solid white;
+    padding: 8px;
+    margin: 0;
+    margin-bottom: 0px;
   }
 .main-nav-button a { /*text color*/
     color: white;
-    display: inline-block;
     letter-spacing: 1px; /* Adjusted letter-spacing */
-    text-decoration: none; /* Remove underline from links */
   }
 .main-nav-button a:hover {
     /*color: red;*/
@@ -128,6 +93,3 @@ h1, footer{
       -webkit-text-stroke-width: 1.2px;
       -webkit-text-stroke-color: white;
   }
-
-
-
