@@ -12,7 +12,7 @@ body {
     font-family:'Source Code Pro', monospace;
     list-style-type: none;
     font-size: 80%;
-    background: #000;
+    background: #000000;
     line-height: 1.2;
 }
 
@@ -33,7 +33,7 @@ article {
     padding: 20px;
     border: 1px solid white;
     border-radius: 5px;
-    background: #000
+    background: #000000
   }
   img {
     max-width: 100%;
@@ -50,7 +50,7 @@ article {
 
   header{
     font-size: 35px;
-    color: #0000;
+    color: #000000;
     font-weight: bold;
     background: url("images_code/noiseForWebTextCropped.jpg");
     -webkit-background-clip: text;
@@ -60,7 +60,7 @@ article {
   }
   footer{
     font-size: 21px;   
-    background: #000; 
+    background: #000000; 
   }
 
   /*border/format for each button */
