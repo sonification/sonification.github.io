@@ -50,11 +50,11 @@ header{
     font-weight: bold;
     padding: 2px;
     
-    background: url("images_code/noiseForWebTextCropped.jpg");
+    background: url("images_code/noiseForWebTextCropped_800x503.png");
     -webkit-background-clip: text;
     background-clip: text;
     opacity: 1; /*to adjust maybe none*/
-    filter: blur(1px); /*to adjust*/
+    filter: blur(0.4px); /*to adjust*/
 }
 footer{
     font-size: 21px;   
