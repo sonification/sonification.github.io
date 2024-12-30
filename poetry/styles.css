@@ -24,25 +24,21 @@ main {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 } 
-
-.div-image  {
-    display: flex;
-    justify-content: center;
-    border: none
-}
-
 article {
     border: 2px solid white;
     border-radius: 8px;
-    background: #000
+    background: #000;
 }
-
+.div-image  {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
 img {
     max-width: 100%;
     height: auto;
-    
+    padding-bottom: 10px; 
 }
-
 header, footer{
     color: #fff;
     text-align: center;
