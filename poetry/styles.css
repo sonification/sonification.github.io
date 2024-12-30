@@ -54,7 +54,7 @@ header{
     font-weight: bold;
     padding: 2px;
     
-    background: url("../images_code/noiseForWebTextCropped.jpg");
+    background: url("images_code/noiseForWebTextCropped.jpg");
     -webkit-background-clip: text;
     background-clip: text;
     opacity: 1; /*to adjust maybe none*/
