@@ -58,8 +58,7 @@ header{
     -webkit-background-clip: text;
     background-clip: text;
     opacity: 1; /*to adjust maybe none*/
-    filter
-    : blur(1px); /*to adjust*/
+    filter: blur(1px); /*to adjust*/
 }
 footer{
     font-size: 21px;   
