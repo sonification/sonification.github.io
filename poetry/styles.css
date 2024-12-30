@@ -99,9 +99,6 @@ footer{
 }
 span{
     display: inline-block;
-    /* to delete*/
-    border: 2px solid rgb(160, 6, 6);
-    padding: 0px;
 }
 
 .center-span {
