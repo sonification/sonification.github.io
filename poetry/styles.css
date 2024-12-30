@@ -99,6 +99,7 @@ footer{
 }
 span{
     display: inline-block;
+    padding: 0px;
 }
 
 .center-span {
