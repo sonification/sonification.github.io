@@ -14,5 +14,6 @@ Lightning:    npub1myhtekujfx5mayq7uz7scay04vku8cy5vr9q6wrl3ggugljrs29qys6ss6@np
 
 
 ## Art collective: 
+Breaks /brics/ - Bitcoin Freaks amongst other things. Just wanted to be the first to write that down, just in case.
 
 For the main page we used this mapper:  https://www.fla-shop.com/image-map/
