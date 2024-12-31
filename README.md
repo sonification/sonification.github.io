@@ -9,7 +9,7 @@ For the main page we used this mapper:  https://www.fla-shop.com/image-map/
 
 
 
-ZAP US IF YOU CAN: /br
+ZAP US IF YOU CAN
 Lightning:    npub1myhtekujfx5mayq7uz7scay04vku8cy5vr9q6wrl3ggugljrs29qys6ss6@npub.cash
 
 
