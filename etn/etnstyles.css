@@ -46,7 +46,7 @@ p{
   position: relative;
   overflow: hidden; /* Ensure the pseudo-element does not overflow */
 
-  border: 2px solid red; /* Add a red border for debugging */
+  border: 2px solid white; /* Add a red border for debugging */
 }
 
 .button::before {
