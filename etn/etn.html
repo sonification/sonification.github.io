@@ -19,23 +19,6 @@
   <iframe src="enjoyTheNoise_mobile.pdf" width="100%" height="600px"></iframe>
 </div>
 
-<!-- Use JavaScript to add a fallback for older browsers that don't support the download attribute -->
-<script>
-  // Get a reference to the download link
-  const downloadLink = document.getElementById('download-link');
 
-  // Check if the download attribute is supported in the browser
-  if (!('download' in downloadLink)) {
-    // Add an event listener to the download link
-    downloadLink.addEventListener('click', function(event) {
-      // Prevent the default behavior of the link
-      event.preventDefault();
-      // Open the link in a new tab
-      window.open(this.href, '_blank');
-      // Display an alert message instructing the user to right-click and select "Save as" to download the PDF
-      alert('Right-click and select "Save as" to download the PDF.');
-    });
-  }
-</script>
 </body>
 </html>
