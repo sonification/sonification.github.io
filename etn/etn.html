@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="etnstyles.css">
 </head>
 <body>
-  
+  <!-- Create a link to download the PDF -->
+<a href="https://github.com/sonification/enjoyTheNoisePDF.git" id="download-link">PDF Download with </a>
+
 <!-- Embed the PDF in an object element -->
-<object id="pdf-object" data="etnPDfs/enjoyTheNoise_mobile.pdf" type="application/pdf">
+<object id="pdf-object" data="enjoyTheNoise_mobile.pdf" type="application/pdf">
   <!-- Display a message if the browser doesn't support displaying PDFs -->
   <p>It seems your browser doesn't support displaying PDFs.</p>
 </object>
@@ -26,8 +28,6 @@
   }
 </style>
 
-<!-- Create a link to download the PDF -->
-<a href="https://github.com/sonification/enjoyTheNoisePDF" id="download-link">Download PDF</a>
 
 <!-- Use JavaScript to add a fallback for older browsers that don't support the download attribute -->
 <script>
