@@ -1,0 +1,87 @@
+body {
+  font-family:'Source Code Pro', monospace;
+  list-style-type: none;
+  line-height: 1.2;
+  background-color: #000000;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-size: 21px;
+}
+.pdf-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  margin: 0 auto; /* Center the container */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: 100%; /* Full height of the container */
+  border: none; /* Remove the default border */
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 10px; /* Add space between elements */
+  padding: 10px; /* Add padding around the container */
+}
+.button {
+  display: inline-block;
+  background-image: url('images_code/noiseForWebButtonCropped_200x126.png'); 
+  background-size: cover;
+  background-position: center;
+  width: 200px; /* adjust to your desired width */
+  height: 80px; /* adjust to your desired height */
+  border-radius: 13px; /* heavily rounded corners */
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden; /* Ensure the pseudo-element does not overflow */
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images_code/noiseForWebButtonCropped_200x126.png'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px); /* Initial state without blur */
+  transition: filter 0.21s ease-in-out; /* Smooth transition */
+  z-index: 0; /* Ensure the pseudo-element is behind the text */
+  transition: color 0.21s ease-in-out; /* Smooth transition for color change */
+}
+
+.button:hover::before {
+  filter: blur(0px); /* Apply blur effect on hover */
+}
+
+.button:hover span {
+  color: #000000; /* Change text color on hover */
+}
+.button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Ensure the text is above the pseudo-element */
+}
+
+
+
