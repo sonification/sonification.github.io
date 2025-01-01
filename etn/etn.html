@@ -3,32 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTMX PDF Example</title>
+  <title> PDF Example</title>
   <link rel="stylesheet" href="etnstyles.css">
 </head>
 <body>
   <!-- Create a link to download the PDF -->
-<a href="https://github.com/sonification/enjoyTheNoisePDF.git" id="download-link">PDF Download with </a>
-
-<!-- Embed the PDF in an object element -->
-<object data="enjoyTheNoise_mobile.pdf" type="application/pdf" width="100vw" height="100vh">
-  <p>It seems your browser doesn't support displaying PDFs.</p>
-</object>
-
-
   
-<!-- Use CSS to set the width and height of the object element to 100% of the viewport -->
-<style>
-  object {
-    /* Set the width to 100% of the viewport width */
-    width: 100vw;
-    /* Set the height to 100% of the viewport height */
-    height: 100vh;
-    /* Remove the border around the object element */
-    border: none;
-  }
-</style>
+ 
+  <div class="button-container">
+    <a href="https://github.com/sonification/enjoyTheNoisePDF.git" class="button"><span>DOWNLOAD & VERIFY</span></a>
+  </div>
 
+<!-- Embed the PDF using an iframe -->
+<div class="pdf-container">
+  <iframe src="enjoyTheNoise_mobile.pdf" width="100%" height="600px"></iframe>
+</div>
 
 <!-- Use JavaScript to add a fallback for older browsers that don't support the download attribute -->
 <script>
