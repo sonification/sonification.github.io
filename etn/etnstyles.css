@@ -35,18 +35,18 @@ p{
 }
 .button {
   display: inline-block;
-  background-image: url('etnPDFs/noiseForWebButtonCropped_200x126.png'); 
+  background-image: url('images_code/noiseForWebButtonCropped_200x126.png'); 
   background-size: cover;
   background-position: center;
-  width: 200px; /* adjust to your desired width */
-  height: 80px; /* adjust to your desired height */
+  width: 350px; /* adjust to your desired width */
+  height: 50px; /* adjust to your desired height */
   border-radius: 13px; /* heavily rounded corners */
   cursor: pointer;
   text-decoration: none;
   position: relative;
   overflow: hidden; /* Ensure the pseudo-element does not overflow */
 
-  border: 2px solid white; /* Add a red border for debugging */
+  text-align: center; /* Center the text horizontally */
 }
 
 .button::before {
@@ -56,13 +56,14 @@ p{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('etnPDFs/images_code/noiseForWebButtonCropped_200x126.png'); 
+  background-image: url('etnPDFs/noiseForWebButtonCropped_200x126.png'); 
   background-size: cover;
   background-position: center;
   filter: blur(1px); /* Initial state without blur */
   transition: filter 0.21s ease-in-out; /* Smooth transition */
-  z-index: 0; /* Ensure the pseudo-element is behind the text */
   transition: color 0.21s ease-in-out; /* Smooth transition for color change */
+
+  z-index: 0; /* Ensure the pseudo-element is behind the text */
 }
 
 .button:hover::before {
@@ -83,6 +84,11 @@ p{
   color: #ffffff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1; /* Ensure the text is above the pseudo-element */
+
+  white-space: nowrap; /* Prevent text wrapping */
+  width: 100%; /* Ensure the text takes full width of the button */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 0 10px; /* Add padding to the left and right */
 }
 
 
