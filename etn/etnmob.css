@@ -42,7 +42,7 @@ main {
       gap: 0px;
     }
     article {
-      height: 100vh; /* fill the screen height */
+      height: auto; /* fill the screen height */
       overflow-y: auto; /* add a scrollbar if the content is too long */
     }
   }
@@ -54,7 +54,7 @@ main {
       gap: 0px;
     }
     article {
-      height: 100vh; /* fill the screen height */
+      height: auto; /* fill the screen height */
       overflow-y: auto; /* add a scrollbar if the content is too long */
     }
   }
