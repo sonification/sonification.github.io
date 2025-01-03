@@ -75,8 +75,8 @@ main {
   background-image: url('etnPDFs/noiseForWebButtonCropped_200x126.png'); 
   background-size: cover;
   background-position: center;
-  width: 310px; /* adjust to your desired width */
-  height: 40px; /* adjust to your desired height */
+  width: 260px; /* adjust to your desired width */
+  height: 30px; /* adjust to your desired height */
   border-radius: 13px; /* heavily rounded corners */
   cursor: pointer;
   text-decoration: none;
@@ -115,7 +115,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 26px;
+  font-size: 17px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #ffffff;
