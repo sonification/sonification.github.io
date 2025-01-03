@@ -16,7 +16,7 @@ main {
   }
   
   article {
-    display: flex;
+    display: flex;    
     justify-content: center;
   }
   
@@ -33,6 +33,7 @@ main {
   @media (max-width: 1024px) and (orientation: portrait) {
     main {
       grid-template-columns: 1fr;
+      gap: 4px;
     }
     article {
       height: 100vh; /* fill the screen height */
@@ -44,6 +45,7 @@ main {
   @media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
     main {
       grid-template-columns: 1fr 1fr;
+      gap: 4px;
     }
     article {
       height: 100vh; /* fill the screen height */
