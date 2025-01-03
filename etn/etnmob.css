@@ -1,1 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif; /*CHANGE*/
+    margin: 0;
+    background-color: black;
+}
 
+/* Mobile styles */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  article {
+    display: flex;
+    justify-content: center;
+  }
+  
+  article img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  /* iPad styles */
+  
+  /* iPad portrait mode */
+  @media (max-width: 1024px) and (orientation: portrait) {
+    main {
+      grid-template-columns: 1fr;
+    }
+    article {
+      height: 100vh; /* fill the screen height */
+      overflow-y: auto; /* add a scrollbar if the content is too long */
+    }
+  }
+  
+  /* iPad landscape mode */
+  @media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+    article {
+      height: 100vh; /* fill the screen height */
+      overflow-y: auto; /* add a scrollbar if the content is too long */
+    }
+  }
