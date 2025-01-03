@@ -4,6 +4,7 @@
 body {
     font-family:'Source Code Pro', monospace;
     margin: 0;
+    padding: 0;
     background-color: black;
 }
 
@@ -20,6 +21,7 @@ main {
     justify-content: center;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    margin-bottom: 1px; /* adjust this value to your liking */
   }
   
   article img {
