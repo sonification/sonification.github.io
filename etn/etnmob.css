@@ -18,10 +18,14 @@ main {
   article {
     display: flex;    
     justify-content: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
   }
   
   article img {
-    width: 100%;
+    display: block; /* Ensure images are block elements */
+    width: 100%; /* Make images responsive */
+    margin: 0 auto; /* Center images */
     height: auto;
     max-width: 100%;
     object-fit: contain;
@@ -60,6 +64,9 @@ main {
   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
   gap: 10px; /* Add space between elements */
   padding: 10px; /* Add padding around the container */
+  position: fixed;
+  top: 20px; /* Adjust this value to separate from the top of the viewport */
+
 }
 .button {
   display: inline-block;
