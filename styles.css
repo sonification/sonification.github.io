@@ -2,10 +2,15 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+
+    text-decoration: none;
+    font-family:'Source Code Pro', monospace;
+    list-style-type: none;
 }
 body{
     background-color: rgb(0, 0, 0);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -13,14 +18,16 @@ body{
 
 .blackTextImage, .redTextImage {
     width: 100%;
-    
     height: auto;
-  }
+}
 
-  svg {
-    width: 100vw;
-    height: 100vh;
-  }
+svg{
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Ensure the SVG scales properly */
+}
+
 .redTextImage{
     position: absolute;
     left: 0;
@@ -37,3 +44,21 @@ body{
     stroke-width: 2px;
     opacity: 20%;
  } */
+ .footer {
+    text-align: center;
+    margin-top: 2px; /* Adjust as needed to position below the picture */
+    border-radius: 4px; /* Adjust the value to make the corners more or less rounded */
+    padding: 1px 20px; /* Add padding to the top/bottom and left/right */
+}
+
+.footer a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 35px;
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent element */
+}
+
+span{
+    font-size: 26px;
+}
