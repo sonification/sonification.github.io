@@ -44,11 +44,12 @@ svg{
     stroke-width: 2px;
     opacity: 20%;
  } */
- .footer {
+.footer {
     text-align: center;
     margin-top: 2px; /* Adjust as needed to position below the picture */
     border-radius: 4px; /* Adjust the value to make the corners more or less rounded */
     padding: 1px 20px; /* Add padding to the top/bottom and left/right */
+    background-color: red; /* Set initial background color to red */
 }
 
 .footer a {
@@ -59,6 +60,24 @@ svg{
     color: inherit; /* Inherit color from parent element */
 }
 
+span{
+    font-size: 26px;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .footer {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .footer a {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    span {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
 span{
     font-size: 26px;
 }
