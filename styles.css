@@ -26,6 +26,7 @@ svg{
     margin: 0 auto;
     width: 100%; /* Adjust as needed */
     height: auto; /* Ensure the SVG scales properly */
+    max-height: calc(100vh - 100px);
 }
 
 .redTextImage{
@@ -64,20 +65,20 @@ span{
     font-size: 26px;
 }
 
-/* Media query for screens smaller than 600px */
+/* Media query for small screens */
 @media (max-width: 600px) {
     .footer {
-        padding: 10px 15px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Adjust font size */
+      padding: 10px; /* Adjust padding */
     }
-
+  
     .footer a {
-        font-size: 20px; /* Adjust font size for smaller screens */
+      display: block; /* Stack elements vertically */
+      margin-bottom: 10px; /* Add space between elements */
     }
-
-    span {
-        font-size: 18px; /* Adjust font size for smaller screens */
+  
+    .footer span {
+      display: block; /* Stack elements vertically */
+      margin-bottom: 10px; /* Add space between elements */
     }
-}
-span{
-    font-size: 26px;
 }
