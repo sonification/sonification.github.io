@@ -68,17 +68,16 @@ span{
 /* Media query for small screens */
 @media (max-width: 600px) {
     .footer {
-      font-size: 14px; /* Adjust font size */
+     
       padding: 10px; /* Adjust padding */
     }
   
     .footer a {
-      display: block; /* Stack elements vertically */
+      font-size: 13px; /* Adjust font size */
+      display: inline-block; /* Stack elements vertically */
       margin-bottom: 10px; /* Add space between elements */
     }
-  
-    .footer span {
-      display: block; /* Stack elements vertically */
-      margin-bottom: 10px; /* Add space between elements */
+    .footer span{
+        font-size: 13px;
     }
 }
