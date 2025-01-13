@@ -77,9 +77,8 @@ span{
       display: inline-block; /* Stack elements vertically */
       padding: 4px;
     }
-    .footer span{
+    .footer span {
         font-size: 17px;
     }
 }
- }
-}
+
