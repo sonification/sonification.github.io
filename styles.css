@@ -73,11 +73,13 @@ span{
     }
   
     .footer a {
-      font-size: 13px; /* Adjust font size */
+      font-size: 17px; /* Adjust font size */
       display: inline-block; /* Stack elements vertically */
-      margin-bottom: 10px; /* Add space between elements */
+      padding: 4px;
     }
     .footer span{
-        font-size: 13px;
+        font-size: 17px;
     }
+}
+ }
 }
