@@ -16,7 +16,9 @@ Lightning:    omniacollective@getalby.com
 ## Art collective - Current Artists
 
 Ceccato Rudy
+
 MrSilly
+
 Reed Rockwell
 
 For the main page we used this mapper:  https://www.fla-shop.com/image-map/
