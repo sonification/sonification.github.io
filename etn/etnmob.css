@@ -67,7 +67,7 @@ main {
   gap: 10px; /* Add space between elements */
   padding: 10px; /* Add padding around the container */
   position: fixed;
-  top: 20px; /* Adjust this value to separate from the top of the viewport */
+  top: 4px; /* Adjust this value to separate from the top of the viewport */
 
 }
 .button {
